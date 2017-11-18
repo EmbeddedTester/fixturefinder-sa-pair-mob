@@ -11,8 +11,8 @@ var FixtureRetriever = function() {
         filterCurrentWith: function(filter) {
             FixtureParser.parseFixtures(filter(fixtures));
         },
-        getFixturesByDate: function(date, filter){
-            var url = 'http://fixture-finder-us.herokuapp.com/fixture-finder/fixtures/'+date+'?callback=?';
+        getFixturesByDate: function(date, filter) {
+            var url = 'http://fixture-finder-us.herokuapp.com/fixture-finder/fixtures/' + moment(date).add(2, 'days').format("YYYY-MM-DD") + '?callback=?';
             $('.spinner').fadeIn(1000);
 
             FixtureFinder.setDateWithCurrentLanguage(date, FixtureFinder.currentLanguage);
