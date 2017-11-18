@@ -18,11 +18,11 @@
     <script>
         var FixtureFinder = {};
     </script>
-    <script src="../../js/lib/moment.min.js"></script>
-    <script src="../../js/fixture-parser.js"></script>
-    <script src="../../js/fixture-date.js"></script>
-    <script src="../../js/fixture-filter.js"></script>
-    <script src="../../js/localize.js"></script>
+    <script src="../js/lib/moment.min.js"></script>
+    <script src="../js/fixture-parser.js"></script>
+    <script src="../js/fixture-date.js"></script>
+    <script src="../js/fixture-filter.js"></script>
+    <script src="../js/localize.js"></script>
 
     <!-- include spec files here... -->
     <script src="resources/testFixtureData.js"></script>
@@ -38,7 +38,7 @@
     <div class="container main" style="display:none">
         <div class="row">
             <div class="jumbotron">
-                <h1>Fixture Findr</h1>
+                <h1>Fixture Findr (Pairing A)</h1>
             </div>
             <div class="localize">
                 <input type="radio" id="en_loc" name="localize" value="en" checked>
@@ -46,14 +46,14 @@
                     <div class="flag flag-USA"></div>
                 </label>
 
-                <input type="radio" id="et_loc" name="localize" value="et">
-                <label for="et_loc">
-                    <div class="flag flag-Estonia"></div>
-                </label>
-
                 <input type="radio" id="de_loc" name="localize" value="de">
                 <label for="de_loc">
                     <div class="flag flag-Germany"></div>
+                </label>
+
+                <input type="radio" id="et_loc" name="localize" value="et">
+                <label for="et_loc">
+                   <div class="flag flag-Estonia"></div>
                 </label>
             </div>
             <nav class="navbar navbar-default">
@@ -82,12 +82,6 @@
                                     <strong><span class="de-txt">Germany</span></strong>
                                 </label>
                             </li>
-                            <li>
-                                <input type="radio" id="Estonia" name="competition" value="3">
-                                <label for="Estonia"><span class="flag flag-Estonia"></span>
-                                    <strong><span class="et-txt">Estonia</span></strong>
-                                </label>
-                            </li>
                         </ul>
                         <input type="text" class="form-control team-filter" placeholder="Filter Team">
                     </div>
@@ -100,7 +94,7 @@
                     <button type="button" class="btn btn-info btn dateSelect" data-offset="-1">Previous Day</button>
                     <button type="button" class="btn btn-success btn dateSelect" data-offset="0">Today</button>
                     <button type="button" class="btn btn-info btn dateSelect" data-offset="1">Next Day</button>
-                    <button type="button" class="btn btn-primary btn-xs dateSelect" data-offset="7">Next Week</button>
+                    <button type="button" class="btn btn-primary btn dateSelect" data-offset="7">Next Week</button>
                 </div>
 
                 <div class="info">
@@ -142,23 +136,23 @@
 
     <script src="http://code.jquery.com/jquery-1.11.2.min.js">
     </script>
-    <script src="../../js/lib/dropdowns-enhancement.js">
+    <script src="./js/lib/dropdowns-enhancement.js">
     </script>
-    <script src="../../js/lib/sorttable.js">
+    <script src="./js/lib/sorttable.js">
     </script>
-    <script src="../../js/lib/moment.min.js">
+    <script src="./js/lib/moment.min.js">
     </script>
-    <script src="../../js/initializer.js">
+    <script src="./js/initializer.js">
     </script>
-    <script src="../../js/fixture-parser.js">
+    <script src="./js/fixture-parser.js">
     </script>
-    <script src="../../js/fixture-retriever.js">
+    <script src="./js/fixture-retriever.js">
     </script>
-    <script src="../../js/fixture-date.js">
+    <script src="./js/fixture-date.js">
     </script>
-    <script src="../../js/fixture-filter.js">
+    <script src="./js/fixture-filter.js">
     </script>
-    <script src="../../js/localize.js">
+    <script src="./js/localize.js">
     </script>
 
     <script>
@@ -166,5 +160,4 @@
     </script>
 
 </body>
-
 </html>
